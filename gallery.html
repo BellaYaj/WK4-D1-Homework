@@ -55,70 +55,127 @@
                 }
             </style>
         </head>
-        <div>
-            <div class="parent" style="text-align: center;">
-                <img width="500" src="images/Beautiful winter.jpg">
-                <h3>
-                    <fontface="Arial">Beautiful Winter</font>
-                </h3>
+<ul>
+    <li id="photo">
+        <div class="app-img-wrapper">
+            <img src="images/Santa Claus.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Santa Claus</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/Family Winter.webp" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Family time in the winter.</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/Santa reindeer.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Santa's reindeer</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/Snowland.webp" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Snow land</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/Snowman.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Snowman</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/winter fun.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Fun in the winter.</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/christmas tree.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Christmas tree</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/Beautiful winter.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Beautiful winter</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/snowflake.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Snowflake</h2>
+            </a>
+        </div>
+        <div class="app-img-wrapper">
+            <img src="images/winterland.jpg" class="img-responsive app-img" alt="App">
+            <h2 class="app-img-text">Winterland</h2>
+            </a>
+        </div>
+    </li>
+</ul>
+</main>
+        <section>
+            <ul id="partners">
+        
+                <li class="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li>
+                <li class="partner"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
+                <li class="partner"><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                </li>
+                <li class="partner"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                </li>
+                <li class="partner"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li>
+                <li class="partner"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
+        
+                <!--<li class="partner">
+                            <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"
+                        </li>
+                        <li class="partner">
+                            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"
+                        </li>
+                        <li class="partner">
+                            <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"
+                        </li>
+                        <li class="partner">
+                            <img src="images/partners/partner-collegetours.png" alt="Partner College Tours"
+                        </li>
+                        <li class="partner">
+                            <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"
+                        </li>
+                        <li class="partner">
+                            <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"
+                        </li>-->
+            </ul>
+        </section>
+<footer>
+        <div id="nondisclaimer">
+            <div class="copy">
+                &copy; Copyright 2020 :: GreatCliffs.com
+                    </div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+                    </div>
+        </div>
+        <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University.
+                        All contents are not intended for any commercial gain or use.</p>
+                    </div>
+</footer>
+<script>
+    var photos = [];
+    var fileNames = [];
+    var imageList = [];
+    var image;
+    var openList; <li id='photo'>;
+        var closeList = </li>;
 
-                <div class="parent" style="text-align: center;">
-                    <img width="500" src="images/Snowman.jpg">
-                    <h3>
-                        <fontface="Arial">Snowman</font>
-                    </h3>
+    for (var i = 0; i < 10; i++) {
+        fileNames.push("winterland" + (i + 1));
+        photos.push("img src='images/" + fileNames[i] + ".jpg'>")
+        image = openList + photos[i] + closeList;
+        imageList.push(image);
+        imageList.join("  ");
+    }
+    document.getElementById("album").innerHTML = imageList.join("  ");
+</script>
 
-                    <div class="parent1" style="text-align: center;">
-                        <img width="500" src="images/Family Winter.webp">
-                        <div class="desc">Family time in the winter</div>
-
-                        <div class="parent1" style="text-align: center;">
-                            <img width="500" src="images/Snowman love.webp">
-                            <div class="desc">Little girl outside with Snowman</div>
-
-                            <div style="text-align: center;">
-                                <img width="500" src="images/winter fun.jpg">
-                                <div class="desc">Winter Fun!</div>
-
-                                <div style="text-align: center;">
-                                    <img width="500" src="images/Snowland.webp">
-                                    <div class="desc">Snowland</div>
-
-                                    <div style="text-align: center;">
-                                        <img width="500" src="images/christmas tree.jpg">
-                                        <div class="desc">christmas Tree</div>
-
-                                        <div style="text-align: center;">
-                                            <img width="500" src="images/Beautiful winter.jpg">
-                                            <div class="desc">Beautiful Winter</div>
-
-                                            <div style="text-align: center;">
-                                                <img width="500" src="images/Santa Claus.jpg">
-                                                <div class="desc">Santa Claus</div>
-
-                                                <div style="text-align: center;">
-                                                    <img width="500" src="images/Santa reindeer.jpg">
-                                                    <div class="desc">One of Santa's reindeer</div>
-
-                                                </div>
-                                                <footer>
-                                                    <div id="nondisclaimer">
-                                                        <div class="copy">
-                                                            &copy; Copyright 2020 :: GreatCliffs.com
-                                                        </div>
-                                                        <div class="social">
-                                                            <a href="#" class="fa fa-facebook"></a>
-                                                            <a href="#" class="fa fa-instagram"></a>
-                                                            <a href="#" class="fa fa-twitter"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div id="disclaimer">
-                                                        <p>This website is designed and created solely for educational
-                                                            purposes only at Westcliff University.
-                                                            All contents are not intended for any commercial gain or
-                                                            use.</p>
-                                                    </div>
-                                                </footer>
 </body>
 
 </html>
